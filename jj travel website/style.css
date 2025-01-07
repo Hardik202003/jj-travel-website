@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@300;400&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 15px 0 15px 0;
+    margin-top: 0%;
+    background-color: rgba(249, 249, 249, 1);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100vw;
+
+    
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer; 
+    margin: 0 0 0 50px;
+    
+     
+}
+.nav-links{
+    padding: 0;
+    margin: 0 0px 0 100px;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+
+}
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 16px;
+    /* font-family: 'Inter', sans-serif; */
+    
+}
+.search-box{
+    margin: 0 50px 0 160px;
+}
+
+.search-text{
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 4px 0 4px 4px;
+    margin: 0 0 0 0;
+}
+
+.search-btn{
+    color: white;
+    background-color: rgb(26, 104, 115);
+    border: 3px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-weight: 401;
+    
+}
+
+.welcome{
+        color: white;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 501;
+        letter-spacing: 2px;
+        padding: 200px 0 0 0;
+ }
+
+ .visit{
+    margin: -10px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    font-size: 130px;
+ }
+
+ .visit span:after{
+   content: 'Gujarat';
+   animation: text 15s infinite; 
+   color: #1A6873;
+ }
+
+ @keyframes text {
+  20% {
+         content: 'Rajastan';
+   }
+
+   40% {
+      content: 'Delhi';
+   }
+   60% {
+      content: 'Punjab';
+}
+   80% {
+      content: 'Mumbai';
+}
+ }
+
+ .info{
+    margin: 10px 0 0 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+ }
+
+ .book-place{
+    font-size: 30px;
+    color: black;
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 10px;
+    margin: 30px 0px 100px -112px;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    right: 50%;
+    left: 50%;
+ }
+
+ .book-place span{
+    font-weight: 600;
+ }
+
+ .book-place a {
+   text-decoration: none;
+   color: #000000;
+ }
+
+ /*-------------------- Book-------------------- */
+
+ .book-text{
+    color: black;
+    font-size: 55px;
+    font-weight: 700px;
+    text-align: center;
+    margin: 0px 0 0px 0;
+    padding: 60px 0 30px 0;
+ }
+
+ .book-text span{
+    color: #1A6873;
+ }
+
+ .book-img{
+    background-color: #ffffff;
+    height: 500px;
+    margin: 0 0px 0px 115px;
+    border-radius: 10px;
+    padding: 0 0px 0 0;
+    /* border: 2px solid black; */
+ }
+
+ .book-contain{
+    display: flex;
+ }
+
+ .book-form{
+    margin: 0 0 0 40px;
+ }
+
+ .whereto input{
+    padding: 10px 350px 10px 5px;
+    margin: 0px 0px 15px 0px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .textarea{
+    color: #000000;
+    padding: 5px 0px 0px 5px;
+    background-color: rgba(249, 249, 249, 1);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .book-btn{
+    margin: 20px 0 0 0;
+    padding: 15px 35px 15px 35px;
+    border-radius: 10px;
+    background-color: #1A6873;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #1A6873;
+ }
+
+ .book-btn span{
+    font-weight: 600;
+ }
+
+.book-img img{
+   margin: -3px 0 0 0;
+   height: 496px;
+   /* background-color: aliceblue; */
+   border-radius: 15px;
+   border: 2px solid black;
+}
+ 
+ /*-------------------- Packages -------------------- */
+ 
+ .packages-contain{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+   grid-gap: 46px;
+   margin: 0 0 0 30px;
+
+ }
+
+ .packages-contain div img{
+   width: 100%;
+   border-radius: 5px;
+   height: 50%;
+ }
+
+ .packages-contain div {
+   background-color: rgba(249, 249, 249, 1);
+   height: 500px;
+   width: 400px;
+   border-radius: 5px;
+
+ }
+
+ .price{
+   margin: 50px 0 0 5px;
+   font-weight: 401;
+ }
+
+ .packages-contain div h2{
+   margin: 10px 0 0px 5px;
+ }
+
+ .packages-info{
+   margin: 10px 0 0 5px;
+ }
+
+ .packages button{
+   margin: 10px 0 0 5px;
+   padding: 5px 10px 5px 10px;
+   color: white;
+   background-color: #1A6873;
+   font-size: 15px;
+   border: 1px solid #1A6873;
+   border-radius: 5px;
+   font-weight: 600;
+ }
+
+ .packages button a {
+   text-decoration: none;
+   color: white;
+ }
+
+ /*------------------- Gallary -------------------*/
+
+ .gallary-info{
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
+   grid-gap: 46px;
+ }
+
+ .gallary-info div img{
+   width: 100%;
+   border-radius: 5px;
+   height: 260px;
+ }
+
+ .gallary-info div{
+   width: 400px;
+   height: 250px;
+   margin: 0 0 0 30px;
+ }
+
+ /*----------------------About Us------------------ */
+
+.aboutus-text{
+      color: #1A6873;
+      font-size: 55px;
+      font-weight: 700px;
+      text-align: center;
+      margin: 0px 0 0px 0;
+      padding: 60px 0 30px 0;
+   }
+  
+.aboutus-text span{
+      color: black;
+   }
+ 
+.about-contain{
+   display: flex;
+   margin: 0 0 100px 0;
+}
+
+.about-img{
+   /* background-color: rgba(249, 249, 249, 1); */
+   height: 400px;
+   margin: 0 50px 0px 30px;
+   padding: 0 0px 0 0;
+   border-radius: 20px;
+}
+
+.aboutme h3{
+   font-size: 45px;
+   font-weight: 600;
+   margin: 0 0 20px 0;
+}
+
+.aboutme p{
+   margin: 0 95px 20px 0;
+   text-align: justify;
+
+}
+
+.aboutme button{
+   margin: 10px 0 0 0px;
+   padding: 15px 20px 15px 20px;
+   color: white;
+   background-color: #1A6873;
+   font-size: 20px;
+   border: 1px solid #1A6873;
+   border-radius: 5px;
+   font-weight: 600;
+}
+
+/*-------------------- footer-------------------- */
+
+.footer{
+   margin: 0 0 0 0;
+   height: 309px;
+   width: 100%;
+   background-color: rgba(249, 249, 249, 1);
+}
+.footer-info{
+   text-align: center;
+   margin: 0 0 20px 0;
+}
+.footer-text{
+   color: black;
+   font-size: 60px;
+   font-weight: 700px;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
+.footer-text span{
+   color: #1A6873;
+}
+
+.facebook{
+   margin: 0px 15px 0 41%;
+}
+
+.instgram{
+   margin: 0 15px 0 0;
+}
+
+.youtube{
+   margin: 0 15px 0 0;
+}
+
+.twitter{
+   margin: 0 15px 0 0;
+}
+
+.telegram{
+   margin: 0 15px 0 0;
+}
+
+.copyright{
+   text-align: center;
+   margin: 25px 0 0 0;
+}
+
+.about-img img{
+   margin: 0 0 0 0;
+}
+
